@@ -20,8 +20,5 @@ public class Bootstrap implements CommandLineRunner {
     @Override
     public void run(String... args) throws Exception {
 
-        Ticket ticket = Ticket.builder().content("ticket").label("world soft").date(new Date()).build();
-
-        ticketRepository.save(ticket);
     }
 }

@@ -39,7 +39,6 @@ public class TicketServiceImpl implements TicketService {
         Ticket savedTicket = optionalTicket.get();
         savedTicket.setContent(ticket.getContent());
         savedTicket.setLabel(ticket.getLabel());
-        savedTicket.setDate(ticket.getDate());
 
         ticketRepository.save(savedTicket);
 
